@@ -4,7 +4,7 @@ public class Rocket extends Actor {
     private int velocidad;
     
     public Rocket() {
-        velocidad = 7; 
+        velocidad = 8; 
     }
     
     public void act() {
@@ -32,17 +32,20 @@ public class Rocket extends Actor {
         if (gasolina != null) {
             World world = getWorld();
             Space space = (Space) world;
-            space.incrementarGasolina(); // Incrementa el contador de gasolina en la clase Space
-            world.removeObject(gasolina); // Elimina la botella de gasolina
+            space.incrementarGasolina(); 
+            world.removeObject(gasolina); 
+            Greenfoot.playSound("moneda.wav");            
         }
         
         Actor asteroide = getOneIntersectingObject(Asteroids.class);
         if (asteroide != null) {
             World world = getWorld();
             Space space = (Space) world;
-            space.finalizarJuego(); // Llama al método finalizarJuego() en la clase Space
+            space.finalizarJuego();
+            Greenfoot.playSound("bomba.wav");
         }
     }
+    
 }
 
 

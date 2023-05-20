@@ -4,7 +4,7 @@ public class Gas extends Actor {
     private int velocidad;
     
     public Gas() {
-        velocidad = Greenfoot.getRandomNumber(3) + 1; // Velocidad aleatoria entre 1 y 3
+        velocidad = Greenfoot.getRandomNumber(5) + 1; // Velocidad aleatoria entre 1 y 3
     }
     
     public void act() {

@@ -4,7 +4,7 @@ public class Asteroids extends Actor {
     private int velocidad;
     
     public Asteroids() {
-        velocidad = Greenfoot.getRandomNumber(5) + 1; // Velocidad aleatoria entre 1 y 3
+        velocidad = Greenfoot.getRandomNumber(6) + 1; // Velocidad aleatoria entre 1 y 3
     }
     
     public void act() {

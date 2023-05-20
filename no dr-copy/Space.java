@@ -1,4 +1,5 @@
 import greenfoot.*;
+import greenfoot.GreenfootSound;
 
 public class Space extends World {
     private int gasolinaRecolectada;
@@ -52,7 +53,7 @@ public class Space extends World {
     }
     
     public void finalizarJuego() {
-        showText("¡Has chocado con un asteroide! Juego terminado.", getWidth() / 2, getHeight() / 2);
+        showText("¡Has chocado con una bomba! Juego terminado.", getWidth() / 2, getHeight() / 2);
         Greenfoot.stop();
     }
 }
